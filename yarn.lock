@@ -4988,9 +4988,9 @@ redux-logger@^3.0.6:
   dependencies:
     deep-diff "^0.3.5"
 
-redux-saga-process@2.0.16:
-  version "2.0.16"
-  resolved "https://registry.yarnpkg.com/redux-saga-process/-/redux-saga-process-2.0.16.tgz#c2e98ce2457e89ae567d2646ad30f2676b3402ab"
+redux-saga-process@2.0.19:
+  version "2.0.19"
+  resolved "https://registry.yarnpkg.com/redux-saga-process/-/redux-saga-process-2.0.19.tgz#59b59b82dd239edc18d841e167c5d98fa137f49d"
   dependencies:
     hoist-non-react-statics "^1.2.0"
     invoke-if "^1.2.1"

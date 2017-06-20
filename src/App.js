@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 import { Provider } from 'react-redux';
-import Home from './app/screens/Home';
+import AppRoot from './app/AppRoot';
 
 class App extends Component {
   render() {
     return (
       <Provider store={this.props.store}>
-        <Home />
+        <AppRoot />
       </Provider>
     );
   }

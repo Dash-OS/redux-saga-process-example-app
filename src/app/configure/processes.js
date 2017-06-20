@@ -69,7 +69,8 @@ export default function configureProcesses() {
             | behavior if needed.  See /src/app/shared/utils/config.js for
             | the default configuration that we are adding here.
           */
-          ...config('processes.config'),
+          // root level process logging is fairly redundant
+          log: false,
         },
         handleConfigureProcess,
       )) ||
