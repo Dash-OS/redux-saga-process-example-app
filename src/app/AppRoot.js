@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import * as Routes from './screens';
+import Modal from 'components/Modal';
 
 export default class AppRoot extends Component {
   constructor(props, context) {
@@ -12,6 +13,11 @@ export default class AppRoot extends Component {
   }
   render() {
     const Route = Routes[this.state.route];
-    return <Route />;
+    return (
+      <div>
+        <Route />
+        <Modal />
+      </div>
+    );
   }
 }

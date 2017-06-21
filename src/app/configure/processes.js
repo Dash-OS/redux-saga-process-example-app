@@ -26,7 +26,6 @@ function handleConfigureProcess(processFactory, processID, processPath) {
 }
 
 export default function configureProcesses() {
-  console.log('Config Proc');
   /**
    * buildProcesses
    *

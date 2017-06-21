@@ -22,9 +22,24 @@ class Home extends Component {
         </div>
         <div className="App-intro">
           <h2>{config('app.name')}</h2>
-          {String(this.props.modal.isOpened)}{' '}
+          <div className="info">
+            <span>
+              Welcome to the Redux Saga Process Example Application! We are
+              excited to introduce you to a pattern that we have been using to
+              simplify, organize, and encapsulate our applications logic from
+              our views.
+            </span>
+            <pre>
+              <code>
+                {JSON.stringify(this.props, null, 2)}
+              </code>
+            </pre>
+          </div>
+
           <button onClick={e => this.props.modalOpen('myModal')}>
-            {' '}Toggle
+            <div className="Button-content">
+              Open Modal
+            </div>
           </button>
         </div>
       </div>

@@ -7,5 +7,15 @@ body {
   left:0;
   right:0;
   overflow: hidden;
-  font-family: sans-serif;
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.info {
+  padding: 10px;
+
 }

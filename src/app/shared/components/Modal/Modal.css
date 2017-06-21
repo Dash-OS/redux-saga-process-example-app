@@ -1,0 +1,55 @@
+.Modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(12,15,19,0.3);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.Modal-wrapper.willOpen {
+  opacity: 0;
+
+}
+
+.Modal-wrapper.isOpened {
+  opacity: 1;
+}
+
+.Modal-wrapper.isOpened:not(.willOpen) {
+  opacity: 0;
+}
+
+.Modal-container {
+  position: relative;
+  top: 100px;
+  margin: 20px;
+  padding: 20px;
+  min-height: 200px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(0);
+  opacity: 0;
+  transform: scale3d(0,0,0) translate3d(0,0,0) rotate3d(0,1,1,180deg);
+  transition: opacity 0.8s ease 0.5s, transform 0.8s ease 0.5s;
+  border-radius: 3px;
+  will-change: transform;
+  border: 1px ridge rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  background: #e5e5e5;
+}
+
+.Modal-wrapper.willOpen.isOpened .Modal-container {
+  transform: scale3d(1,1,1) translate3d(0,0,0) rotate3d(0,0,0,0deg);
+  opacity: 1;
+}
+
+.Modal-wrapper.isOpened:not(.willOpen) .Modal-container {
+  transform: scale3d(0,0,0) translate3d(0,0,0) rotate3d(0,1,1,180deg);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
